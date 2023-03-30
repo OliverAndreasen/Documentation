@@ -161,7 +161,12 @@ app.post('/createpost', function(req, res){
 });
 
 app.get('/dynamic-post', (req, res) => {
-    res.sendFile(__dirname + '/public/pages/dynamic-post/dynamic-post.html');
+    // Check if the username is set in session storage
+    if (!req.session.username) {
+        res.redirect('/login');
+    } else {
+        res.sendFile(__dirname + '/public/pages/dynamic-post/dynamic-post.html');
+    }
 });
 
 // POST for dynamic post

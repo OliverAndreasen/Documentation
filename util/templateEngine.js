@@ -193,5 +193,8 @@ module.exports = {
     renderDynamicPage,
     renderDynamicContentPage,
     renderEndpointsPage,
-    renderServingFilesPage
+    renderServingFilesPage,
+    createDynamicPage,
+    renderViewDynamicPostPage
+
 };

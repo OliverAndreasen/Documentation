@@ -72,3 +72,23 @@ button:hover {
 .new-user-link a:hover {
     color: #0069d9;
 }
+
+...
+.new-user-link a:hover {
+    color: #0069d9;
+}
+
+/* Add styles for the default credentials box */
+.default-credentials {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.default-credentials p {
+    margin: 0;
+    margin-bottom: 5px;
+}
