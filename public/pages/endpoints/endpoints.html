@@ -1,0 +1,86 @@
+<div class="main">
+  <h1>Endpoints</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>HTTP Method</th>
+      <th>Endpoint</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/songs</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/songs/&lt;id&gt;</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>/songs</td>
+    </tr>
+    <tr>
+      <td>PUT</td>
+      <td>/songs/&lt;id&gt;</td>
+    </tr>
+    <tr>
+      <td>PATCH</td>
+      <td>/songs/&lt;id&gt;</td>
+    </tr>
+    <tr>
+      <td>DELETE</td>
+      <td>/songs/&lt;id&gt;</td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="code-explanation">
+    <h2>Endpoints explained</h2>
+    <ul>
+      <li>GET /songs: Retrieve a list of songs.</li>
+      <li>GET /songs/&lt;id&gt;: Retrieve a specific song.</li>
+      <li>POST /songs: Add a new song.</li>
+      <li>PUT /songs/&lt;id&gt;: Update an existing song.</li>
+      <li>PATCH /songs/&lt;id&gt;: "patch" an existing song.</li>
+      <li>DELETE /songs/&lt;id&gt;: Delete an existing song.</li>
+    </ul>
+  </div>
+  <div class="code-explanation">
+    <h2>Node.js express</h2>
+    <p>
+      theese are the endpoints for the songs api using node.js and express
+    </p>
+    </div>
+    <div class="code-example">
+    app.get('/songs', (req, res) => {
+        // code to retrieve all songs
+    });
+
+    app.get('/songs/:id', (req, res) => {
+        const id = req.params.id;
+        // code to retrieve song by id
+    });
+
+    app.post('/songs', (req, res) => {
+        const newSong = req.body;
+        // code to add new song
+    });
+
+    app.put('/songs/:id', (req, res) => {
+        const id = req.params.id;
+        const updatedSong = req.body;
+        // code to update song by id
+    });
+
+    app.patch('/songs/:id', (req, res) => {
+        const id = req.params.id;
+        const updatedSong = req.body;
+        // code to update song by id (patch an existing song)
+    });
+
+    app.delete('/songs/:id', (req, res) => {
+        const id = req.params.id;
+        // code to delete song by id
+    });
+  </div>
+</div>

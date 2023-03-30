@@ -1,0 +1,58 @@
+<div class="main">
+  <div class="code-explanation">
+    <h2>Getting started with node.js</h2>
+    <p>
+      The first thing you have to do when starting a new project is to create a package.json file. This file contains information about your project.
+      It is used by npm to keep track of the packages you install and their version numbers.
+    </p>
+  </div>
+  <div class="code-example">
+    <p class="filename">package.json</p>
+    {
+      "name": "my-website",
+      "version": "1.0.0",
+      "dependencies": {
+        "express": "^4.17.1"
+      }
+    }
+  </div>
+
+  <div class="code-explanation">
+    <p>
+      When you have created the package.json file, you can install the packages you need. In this example we will install the express package. To install a package, you use the npm install command in the console.
+
+    </p>
+  </div>
+
+  <div class="console-simulation">
+    <div class="console-title">Console Output</div>
+    <div class="console-content">
+      <div class="console-line-input">node install express</div>
+      <div class="console-line">+ express@4.17.1</div>
+        <div class="console-line">added 50 packages from 37 contributors and audited 50 packages in 2.407s</div>
+        <div class="console-line">found 0 vulnerabilities</div>
+    </div>
+  </div>
+
+
+
+  <div class="console-simulation">
+    <div class="console-title">Console Output</div>
+    <div class="console-content">
+      <div class="console-line">["tomato", "cucumber", "hamburger", "soda", "pizza", "rocket"]</div>
+    </div>
+  </div>
+
+  <div class="console-simulation">
+    <div class="console-title">Console Output</div>
+    <div class="console-content">
+      <div class="console-line-input">nodemon app.js</div>
+      <div class="console-line">[nodemon] 2.0.20</div>
+      <div class="console-line">[nodemon] to restart at any time, enter `rs`</div>
+      <div class="console-line">[nodemon] watching path(s): *.*</div>
+      <div class="console-line">[nodemon] watching extensions: js,mjs,json</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

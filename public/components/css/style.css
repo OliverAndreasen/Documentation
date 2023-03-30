@@ -1,0 +1,117 @@
+/* index.css */
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+}
+
+
+/* styles for the code example */
+.code-example {
+    background-color: #282c34;
+    color: #abb2bf;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+    max-width: 100%;
+    width: 800px;
+}
+
+
+/* styles for the console output */
+.console-simulation {
+    background-color: black;
+    color: #00ff00;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.console-title {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.console-content {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.console-line {
+    color: #00ff00;
+    white-space: pre-wrap;
+    margin: 5px 0;
+}
+
+.console-line-output {
+    color: #00ff00;
+    white-space: pre-wrap;
+    margin: 5px 0;
+}
+
+
+/* styles for the console input */
+.console-line-input {
+    color: #00ffff;
+    margin-right: 5px;
+}
+
+
+/* styles for the code explanation */
+.code-explanation {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.code-explanation h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.code-explanation p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+
+
+.filename {
+    background-color: #abb2bf;
+    color: #282c34;
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+
+
+

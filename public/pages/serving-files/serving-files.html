@@ -1,0 +1,35 @@
+<div class="main">
+  <h1>Serving Files</h1>
+  <div class="code-explanation">
+      <h2>Different ways to serve files</h2>
+      <p>
+        There are many ways to serve files in node.js.
+      </p>
+
+  </div>
+
+  <div class="code-example">
+      app.use(express.static(__dirname + '/public'))
+  </div>
+<div class="code-explanation">
+    <p>This way is to serve the static files to the client(HTML,CSS,JS)
+      these are files can be accessed by the user and should not include any sensitive information.
+    </p>
+    </div>
+    <div class="code-example">
+        app.get('/', (req, res) => {
+           res.sendFile(__dirname + '/public/index/index.html')
+        })
+    </div>
+    <div class="code-explanation">
+    <p>This code send a file to the client when a user makes an http request on an endpoint</p>
+  <p>an example for this endpoint is "http://localhost:8080/" </p>
+  </div>
+<div class="code-example">
+  fs.readFileSync(pagePath).toString()
+</div>
+<div class="code-explanation">
+<p>Here we use the file system module in node.js that helps working with file system on the computer</p>
+<p>We use the readFileSync method that reads the contents of the file synchronously (it waits for the file to be read) before the system contiunes</p>
+</div>
+</div>

@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+#post-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.main {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], textarea {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#add-code-explanation, #add-console-simulation {
+    margin-right: 10px;
+}
+
+.code-explanation, .console-simulation {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.console-simulation {
+    position: relative;
+}
+
+.add-console-line {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.code-explanation {
+    display: flex;
+    flex-direction: column;
+}
+
+.code-explanation-title,
+.code-explanation-content {
+    margin-top: 10px;
+}
+
+
+
+.code-example textarea.code-example-content {
+    width: 100%;
+    box-sizing: border-box;
+}

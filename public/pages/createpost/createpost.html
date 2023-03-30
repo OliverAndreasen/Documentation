@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create Post Form</title>
+  <link rel="stylesheet" href="/public/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/createpost/createpost.css" type="text/css">
+
+</head>
+<body>
+<form method="post">
+  <h1>Create Post</h1>
+  <div class="input-group">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" placeholder="Enter title" required>
+  </div>
+  <div class="input-group">
+    <label for="content">Content</label>
+    <textarea id="content" name="content" placeholder="Enter content" rows="5" required></textarea>
+  </div>
+  <button type="submit">Submit</button>
+
+  <button id="add-code-explanation">Add Code Explanation</button>
+  <button id="add-code-explanation">Add Code Explanation</button>
+
+  <script>
+    const form = document.querySelector('form');
+    const button = document.querySelector('#add-code-explanation');
+    const codeExplanations = [];
+    let codeExplanationCount = 0;
+
+    button.addEventListener('click', () => {
+      codeExplanationCount++;
+      const codeExplanation = document.createElement('div');
+      codeExplanation.className = 'code-explanation';
+      codeExplanation.innerHTML = `
+      <h2>Code Explanation ${codeExplanationCount}</h2>
+      <div class="input-group">
+        <label for="code-title-${codeExplanationCount}">Title</label>
+        <input type="text" id="code-title-${codeExplanationCount}" name="code-title-${codeExplanationCount}" placeholder="Enter title" required>
+      </div>
+      <div class="input-group">
+        <label for="code-content-${codeExplanationCount}">Content</label>
+        <textarea id="code-content-${codeExplanationCount}" name="code-content-${codeExplanationCount}" placeholder="Enter content" rows="5" required></textarea>
+      </div>
+    `;
+      form.insertBefore(codeExplanation, button);
+      const codeTitleInput = document.querySelector(`#code-title-${codeExplanationCount}`);
+      const codeContentInput = document.querySelector(`#code-content-${codeExplanationCount}`);
+      const codeExplanationInfo = ['.code-explanation h2', codeTitleInput.value, '.code-explanation p', codeContentInput.value];
+      codeExplanations.push(codeExplanationInfo);
+      codeTitleInput.value = '';
+      codeContentInput.value = '';
+    });
+  </script>
+
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<div class="main">
+    <h1>Objects</h1>
+    <div class="code-explanation">
+        <h2>Exercise 1</h2>
+        <p>
+            Retrieve value from object by key
+        </p>
+    </div>
+    <div class="code-example">
+        const myObj = { message: "Hello, earthling! I bring peace." };
+        // Log the message
+        console.log (myObj.message);
+    </div>
+    <div class="console-simulation">
+        <div class="console-title">Console Output</div>
+        <div class="console-content">
+            <div class="console-line">Hello, earthling! I bring peace.</div>
+        </div>
+    </div>
+
+
+    <div class="code-explanation">
+        <h2>Exercise 2</h2>
+        <p>
+            Defining an object.
+        </p>
+    </div>
+    <div class="code-example">
+        // Create an object that has your name and age.
+        const oliver = {
+        firstName: "Oliver",
+        lastName: "Andreasen",
+        age: 25
+        };
+    </div>
+
+
+    <div class="code-explanation">
+        <h2>Exercise 3</h2>
+        <p>
+            Add a property
+        </p>
+    </div>
+    <div class="code-example">
+        const stackOverflow = {};
+
+        // make a rule called isAllowed and let the value be true
+        stackOverflow.isAllowed = true;
+
+        console.log(stackOverflow.isAllowed);
+    </div>
+    <div class="console-simulation">
+        <div class="console-title">Console Output</div>
+        <div class="console-content">
+            <div class="console-line">True</div>
+        </div>
+    </div>
+
+
+    <div class="code-explanation">
+        <h2>Exercise 4 - Inserting elements</h2>
+        <p>
+            You are a programmer. In one line (one statement) insert hamburger, soda and pizza between the elements cucumber and rocket
+        </p>
+    </div>
+    <div class="code-example">
+        // --------------------------------------
+        // Exercise 4 - Inserting elements
+
+        const diet = ["tomato", "cucumber", "rocket"];
+
+        // You are a programmer. In one line (one statement) insert hamburger, soda and pizza between the elements cucumber and rocket
+        diet.splice(2, 0, "hamburger", "soda", "pizza")
+
+        console.log(diet);
+    </div>
+    <div class="console-simulation">
+        <div class="console-title">Console Output</div>
+        <div class="console-content">
+                <div class="console-line">["tomato", "cucumber", "hamburger", "soda", "pizza", "rocket"]</div>
+        </div>
+    </div>
+
+    <div class="console-simulation">
+        <div class="console-title">Console Output</div>
+        <div class="console-content">
+            <div class="console-line-input">nodemon app.js</div>
+            <div class="console-line">[nodemon] 2.0.20</div>
+            <div class="console-line">[nodemon] to restart at any time, enter `rs`</div>
+            <div class="console-line">[nodemon] watching path(s): *.*</div>
+            <div class="console-line">[nodemon] watching extensions: js,mjs,json</div>
+
+        </div>
+    </div>
+</div>
